@@ -22,19 +22,21 @@
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
- <body class="h-full font-sans antialiased" style="background-color: #FAFAF9; color: #1C1917;"><!-- Navegación Fija -->
+ <body class="h-full font-sans antialiased" style="background-color: #FAFAF9; color: #1C1917;">
+  <!-- Navegación Fija -->
   <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: rgba(250, 250, 249, 0.95); backdrop-filter: blur(10px);">
-   <div class="max-w-4xl mx-auto flex justify-between items-center"><span class="font-serif text-lg font-semibold" id="nav-title">Portafolio</span>
-    <div class="hidden md:flex gap-8 text-sm tracking-wide"><a href="#portada" class="nav-link hover:opacity-70 transition-opacity">Inicio</a> <a href="#indice" class="nav-link hover:opacity-70 transition-opacity">Índice</a> <a href="#semana4" class="nav-link hover:opacity-70 transition-opacity">Semana 4</a> <a href="#semana5" class="nav-link hover:opacity-70 transition-opacity">Semana 5</a> <a href="#semana6" class="nav-link hover:opacity-70 transition-opacity">Semana 6</a>
+   <div class="max-w-4xl mx-auto flex justify-between items-center">
+    <span class="font-serif text-lg font-semibold" id="nav-title">Portafolio</span>
+    <div class="hidden md:flex gap-8 text-sm tracking-wide">
+     <a href="#portada" class="nav-link hover:opacity-70 transition-opacity">Inicio</a> <a href="#indice" class="nav-link hover:opacity-70 transition-opacity">Índice</a> <a href="#semana4" class="nav-link hover:opacity-70 transition-opacity">Semana 4</a> <a href="#semana5" class="nav-link hover:opacity-70 transition-opacity">Semana 5</a> <a href="#semana6" class="nav-link hover:opacity-70 transition-opacity">Semana 6</a>
     </div>
    </div>
   </nav>
-  <main class="w-full"><!-- PORTADA -->
+  <main class="w-full">
+   <!-- PORTADA -->
    <section id="portada" class="min-h-screen flex items-center justify-center px-6 pt-20 pb-20">
     <div class="text-center max-w-2xl section-fade w-full">
-     <div class="mb-8">
-      <svg class="w-16 h-16 mx-auto mb-6" style="color: #78716C;" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-      </svg>
+     <div class="mb-8"><img src="https://drive.google.com/thumbnail?id=1dMEx71-N7kz4dDxgLIUgYlffiOo0nTzw&amp;sz=w1000" alt="Logo Universidad" class="w-16 h-16 mx-auto mb-6 object-contain" loading="lazy" onerror="console.error('Logo no se pudo cargar:', this.src); this.style.display='none';">
      </div>
      <p class="text-sm tracking-[0.3em] uppercase mb-8" style="color: #78716C;">Portafolio de Evidencias</p>
      <div class="mb-8 pb-8" style="border-bottom: 1px solid #E7E5E4;">
@@ -65,8 +67,10 @@
        <p>Sonsonate</p>
       </div>
      </div>
-     <div class="mt-20"><a href="#indice" class="inline-flex flex-col items-center gap-2 text-sm hover:opacity-70 transition-opacity" style="color: #78716C;"> <span>Explorar</span>
-       <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+     <div class="mt-20">
+      <a href="#indice" class="inline-flex flex-col items-center gap-2 text-sm hover:opacity-70 transition-opacity" style="color: #78716C;"> <span>Explorar</span>
+       <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
        </svg></a>
      </div>
     </div>
@@ -75,7 +79,8 @@
     <div class="max-w-3xl mx-auto w-full section-fade">
      <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">Contenido</p>
      <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-12">Índice</h2>
-     <div class="space-y-0"><a href="#introduccion" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">01. Introducción</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#objetivo" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">02. Objetivo</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana4" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">03. Semana 4 — Estrategias e Instrumentos</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana5" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">04. Semana 5 — Prueba Objetiva</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana6" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">05. Semana 6 — Prueba de Ensayo y Actuación</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a>
+     <div class="space-y-0">
+      <a href="#introduccion" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">01. Introducción</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#objetivo" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">02. Objetivo</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana4" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">03. Semana 4 — Estrategias e Instrumentos</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana5" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">04. Semana 5 — Prueba Objetiva</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana6" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">05. Semana 6 — Prueba de Ensayo y Actuación</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a>
      </div>
     </div>
    </section><!-- INTRODUCCIÓN -->
@@ -105,7 +110,8 @@
       <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">Estrategias e Instrumentos de Evaluación</h2>
       <div class="w-16 h-px" style="background-color: #D6D3D1;"></div>
      </div>
-     <div class="space-y-8"><!-- Contenido -->
+     <div class="space-y-8">
+      <!-- Contenido -->
       <div class="p-8 rounded-lg" style="background-color: #FAFAF9;">
        <h3 class="font-serif text-2xl font-semibold mb-6">Contenido</h3>
        <div class="space-y-6" style="color: #44403C;">
@@ -143,12 +149,10 @@
        <div class="space-y-4" style="color: #44403C;">
         <p class="leading-relaxed">En esta sesión trabajamos en equipo para establecer y ejecutar las siguientes acciones:</p>
         <div class="space-y-3 ml-4">
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Elaborar una estrategia de evaluación:</span> Para el tema de Evaluación Educativa, específicamente sobre la Planificación de la evaluación de los aprendizajes. La estrategia consistió en diseñar un cuestionario gamificado con preguntas de opción múltiple, fundamentadas en los contenidos de la Unidad #2.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Aplicar el cuestionario gamificado:</span> Mediante la plataforma digital Wayground, el grupo de maestrantes participó activamente respondiendo las preguntas en tiempo real, mientras el ejecutor guiaba el desarrollo de la actividad y controlaba la secuencia de los ítems.</p>
          </div>
         </div>
@@ -158,16 +162,18 @@
        </div>
        <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
         <p class="text-sm font-semibold mb-3" style="color: #78716C;">Enlace al documento de evidencia:</p>
-        <div class="flex flex-col gap-3"><a href="https://docs.google.com/document/d/1RqKf-wCyPsihndfubn-Cpl-h9sXbgW9dT-coPTXVOs0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver documento de evidencia</a>
+        <div class="flex flex-col gap-3">
+         <a href="https://docs.google.com/document/d/1RqKf-wCyPsihndfubn-Cpl-h9sXbgW9dT-coPTXVOs0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver documento de evidencia</a>
         </div>
         <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Abre el documento con fotos del cuestionario gamificado y resultados</p>
        </div><!-- Espacio para agregar fotos -->
        <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
         <p class="text-sm font-semibold mb-3" style="color: #78716C;">Fotos de la actividad:</p>
-        <div id="evidence-photos-week4" class="grid md:grid-cols-2 gap-4"><button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1JE39bJenT8POyhLpgpeAju0DYUp3nVxr&amp;export=view" alt="Foto 1 - Cuestionario Gamificado" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1RnsaR8aoi3QpUbJYPKclaUKEb3GLoahj&amp;export=view" alt="Foto 2 - Respuestas del grupo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1tvKxyGEZ7ekfeAzQsKXOWuFgY2R7nZdx&amp;export=view" alt="Foto 3 - Participación en Wayground" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1KXbmJFApQq_WF5HAs0iXoVaqsLiTxf3D&amp;export=view" alt="Foto 4 - Resultados de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+        <div id="evidence-photos-week4" class="grid md:grid-cols-2 gap-4">
+         <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1JE39bJenT8POyhLpgpeAju0DYUp3nVxr&amp;sz=w1000" alt="Foto 1 - Cuestionario Gamificado" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1RnsaR8aoi3QpUbJYPKclaUKEb3GLoahj&amp;sz=w1000" alt="Foto 2 - Respuestas del grupo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1tvKxyGEZ7ekfeAzQsKXOWuFgY2R7nZdx&amp;sz=w1000" alt="Foto 3 - Participación en Wayground" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1KXbmJFApQq_WF5HAs0iXoVaqsLiTxf3D&amp;sz=w1000" alt="Foto 4 - Resultados de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button>
         </div>
         <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Haz clic en cualquier foto para ver el carrusel completo</p>
@@ -187,7 +193,8 @@
       <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">Prueba Objetiva y Tabla de Especificaciones</h2>
       <div class="w-16 h-px" style="background-color: #D6D3D1;"></div>
      </div>
-     <div class="space-y-8"><!-- Contenido -->
+     <div class="space-y-8">
+      <!-- Contenido -->
       <div class="p-8 rounded-lg" style="background-color: #FAFAF9;">
        <h3 class="font-serif text-2xl font-semibold mb-6">Contenido</h3>
        <div class="space-y-6" style="color: #44403C;">
@@ -213,20 +220,16 @@
        <div class="space-y-4" style="color: #44403C;">
         <p class="leading-relaxed">En esta sesión trabajamos en equipo para diseñar una prueba objetiva para la asignatura <span class="font-semibold">"Construcción de Instalaciones Residenciales y Comerciales"</span>. El proceso incluyó:</p>
         <div class="space-y-3 ml-4">
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Establecer contenidos a evaluar:</span> Identificamos 5 contenidos fundamentales de la asignatura que serían evaluados a través de la prueba objetiva.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Elaborar tabla de especificaciones:</span> Diseñamos una tabla de especificaciones que articuló los 5 contenidos con los niveles cognitivos de la Taxonomía de Bloom (Crear, Aplicar y Analizar), estableciendo la distribución proporcionada de 15 ítems según cada contenido y nivel.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Determinar cantidad de ítems:</span> La tabla de especificaciones permitió establecer con precisión el número de ítems por contenido, garantizando una cobertura equilibrada y una evaluación comprensiva del aprendizaje.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Diseñar ítems alineados:</span> Se elaboraron 15 ítems con coherencia entre los objetivos de aprendizaje, contenidos y niveles cognitivos especificados en la tabla.</p>
          </div>
         </div>
@@ -236,16 +239,18 @@
        </div>
        <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
         <p class="text-sm font-semibold mb-3" style="color: #78716C;">Enlace al documento de evidencia:</p>
-        <div class="flex flex-col gap-3"><a href="https://docs.google.com/document/d/1B19AzlHD0PTYe6K3RdLCMrQoWvk07PM6Ya9j3nS0Jas/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver prueba objetiva</a>
+        <div class="flex flex-col gap-3">
+         <a href="https://docs.google.com/document/d/1B19AzlHD0PTYe6K3RdLCMrQoWvk07PM6Ya9j3nS0Jas/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver prueba objetiva</a>
         </div>
         <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Documento con la prueba diseñada y análisis de resultados</p>
        </div><!-- Espacio para agregar fotos -->
        <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
         <p class="text-sm font-semibold mb-3" style="color: #78716C;">Fotos de la actividad:</p>
-        <div id="evidence-photos-week5" class="grid md:grid-cols-2 gap-4"><button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6" alt="Foto 1 - Tabla de especificaciones" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm" alt="Foto 2 - Diseño de ítems" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w" alt="Foto 3 - Procesos de diseño" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h" alt="Foto 4 - Análisis de resultados" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+        <div id="evidence-photos-week5" class="grid md:grid-cols-2 gap-4">
+         <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6&amp;sz=w1000" alt="Foto 1 - Tabla de especificaciones" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm&amp;sz=w1000" alt="Foto 2 - Diseño de ítems" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w&amp;sz=w1000" alt="Foto 3 - Procesos de diseño" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h&amp;sz=w1000" alt="Foto 4 - Análisis de resultados" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button>
         </div>
         <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Haz clic en cualquier foto para ver el carrusel completo</p>
@@ -265,7 +270,8 @@
       <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">Prueba de Ensayo y Prueba de Actuación</h2>
       <div class="w-16 h-px" style="background-color: #D6D3D1;"></div>
      </div>
-     <div class="space-y-8"><!-- Contenido -->
+     <div class="space-y-8">
+      <!-- Contenido -->
       <div class="p-8 rounded-lg" style="background-color: #FAFAF9;">
        <h3 class="font-serif text-2xl font-semibold mb-6">Contenido</h3>
        <div class="space-y-6" style="color: #44403C;">
@@ -303,20 +309,16 @@
        <div class="space-y-4" style="color: #44403C;">
         <p class="leading-relaxed">En esta sesión trabajamos en equipo para diseñar pruebas de ensayo y actuación, acompañadas de sus respectivos instrumentos de evaluación. El proceso incluyó:</p>
         <div class="space-y-3 ml-4">
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Diseño de prueba de ensayo:</span> Elaboramos preguntas que permitieran evaluar el pensamiento crítico y la capacidad de síntesis de los estudiantes, con criterios claros para su evaluación.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Diseño de prueba de actuación:</span> Creamos tareas que permitieran observar competencias prácticas y socioafectivas, estableciendo procedimientos sistemáticos de evaluación.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Desarrollo de instrumentos de registro:</span> Diseñamos listas de cotejo y escalas de calificación que permitieran evaluar de manera objetiva el desempeño observado.</p>
          </div>
-         <div class="flex items-start gap-3">
-          <span style="color: #78716C; flex-shrink: 0;">•</span>
+         <div class="flex items-start gap-3"><span style="color: #78716C; flex-shrink: 0;">•</span>
           <p class="text-sm leading-relaxed"><span class="font-semibold">Aplicación de criterios de evaluación:</span> Establecimos criterios medibles y pertinentes que garantizaran la validez y confiabilidad de los resultados.</p>
          </div>
         </div>
@@ -326,16 +328,18 @@
        </div>
        <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
         <p class="text-sm font-semibold mb-3" style="color: #78716C;">Enlace al documento de evidencia:</p>
-        <div class="flex flex-col gap-3"><a href="https://docs.google.com/document/d/1ahWb8ySm1QiUQGRcqT0vnGNonRCHjH7UeLsBp0DW-I0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver prueba de ensayo diseñada</a>
+        <div class="flex flex-col gap-3">
+         <a href="https://docs.google.com/document/d/1ahWb8ySm1QiUQGRcqT0vnGNonRCHjH7UeLsBp0DW-I0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver prueba de ensayo diseñada</a>
         </div>
         <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Documento con la prueba de ensayo y criterios de evaluación</p>
        </div><!-- Espacio para agregar fotos -->
        <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
         <p class="text-sm font-semibold mb-3" style="color: #78716C;">Fotos de la actividad:</p>
-        <div id="evidence-photos-week6" class="grid md:grid-cols-2 gap-4"><button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6" alt="Foto 1 - Diseño de prueba de ensayo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm" alt="Foto 2 - Criterios de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w" alt="Foto 3 - Trabajo colaborativo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
-          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h" alt="Foto 4 - Rúbrica de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+        <div id="evidence-photos-week6" class="grid md:grid-cols-2 gap-4">
+         <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6&amp;sz=w1000" alt="Foto 1 - Diseño de prueba de ensayo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm&amp;sz=w1000" alt="Foto 2 - Criterios de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w&amp;sz=w1000" alt="Foto 3 - Trabajo colaborativo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/thumbnail?id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h&amp;sz=w1000" alt="Foto 4 - Rúbrica de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button>
         </div>
         <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Haz clic en cualquier foto para ver el carrusel completo</p>
@@ -350,28 +354,36 @@
    </section><!-- PIE DE PÁGINA -->
    <footer class="px-6 py-16" style="background-color: #1C1917; color: #FAFAF9;">
     <div class="max-w-3xl mx-auto text-center">
-     <p class="font-serif text-2xl mb-4">Portafolio de Evaluación</p>
-     <p class="text-sm opacity-60">Curso de Evaluación de los Aprendizajes • 2024</p>
-     <div class="mt-8 pt-8" style="border-top: 1px solid #292524;"><a href="#portada" class="inline-flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
-       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+     <p class="font-serif text-2xl mb-4">Portafolio de Evaluación de los Aprendizajes</p>
+     <p class="text-sm opacity-60">Asignatura Evaluación Educativa  • 2026</p>
+     <div class="mt-8 pt-8" style="border-top: 1px solid #292524;">
+      <a href="#portada" class="inline-flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
+       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
        </svg> Volver al inicio </a>
      </div>
     </div>
    </footer>
   </main><!-- MODAL CARRUSEL -->
   <div id="carousel-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center" style="background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(4px);">
-   <div class="relative w-11/12 max-w-4xl"><!-- Botón Cerrar --> <button id="carousel-close" class="absolute -top-10 right-0 text-white hover:opacity-70 transition-opacity" style="z-index: 60;">
-     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+   <div class="relative w-11/12 max-w-4xl">
+    <!-- Botón Cerrar --> <button id="carousel-close" class="absolute -top-10 right-0 text-white hover:opacity-70 transition-opacity" style="z-index: 60;">
+     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
      </svg></button> <!-- Imagen Principal -->
-    <div class="relative rounded-lg overflow-hidden" style="aspect-ratio: 16/9; background-color: #000;"><img id="carousel-image" src="" alt="Foto" class="w-full h-full object-contain" loading="lazy">
+    <div class="relative rounded-lg overflow-hidden" style="aspect-ratio: 16/9; background-color: #000;">
+     <img id="carousel-image" src="" alt="Foto" class="w-full h-full object-contain" loading="lazy">
     </div><!-- Controles de Navegación -->
-    <div class="flex items-center justify-between mt-6 gap-4"><button id="carousel-prev" class="p-3 rounded-full hover:bg-white hover:bg-opacity-10 transition-all" style="color: white;">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    <div class="flex items-center justify-between mt-6 gap-4">
+     <button id="carousel-prev" class="p-3 rounded-full hover:bg-white hover:bg-opacity-10 transition-all" style="color: white;">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
       </svg></button>
      <div class="flex-1 text-center">
       <p id="carousel-counter" class="text-white text-sm">1 de 4</p>
      </div><button id="carousel-next" class="p-3 rounded-full hover:bg-white hover:bg-opacity-10 transition-all" style="color: white;">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
       </svg></button>
     </div><!-- Puntos Indicadores -->
     <div id="carousel-dots" class="flex justify-center gap-2 mt-4"></div>
@@ -381,22 +393,22 @@
     // Carrusel Modal
     const carouselData = {
       week4: [
-        { src: 'https://drive.usercontent.google.com/download?id=1JE39bJenT8POyhLpgpeAju0DYUp3nVxr&export=view', alt: 'Foto 1 - Cuestionario Gamificado' },
-        { src: 'https://drive.usercontent.google.com/download?id=1RnsaR8aoi3QpUbJYPKclaUKEb3GLoahj&export=view', alt: 'Foto 2 - Respuestas del grupo' },
-        { src: 'https://drive.usercontent.google.com/download?id=1tvKxyGEZ7ekfeAzQsKXOWuFgY2R7nZdx&export=view', alt: 'Foto 3 - Participación en Wayground' },
-        { src: 'https://drive.usercontent.google.com/download?id=1KXbmJFApQq_WF5HAs0iXoVaqsLiTxf3D&export=view', alt: 'Foto 4 - Resultados de evaluación' }
+        { src: 'https://drive.google.com/thumbnail?id=1JE39bJenT8POyhLpgpeAju0DYUp3nVxr&sz=w1000', alt: 'Foto 1 - Cuestionario Gamificado' },
+        { src: 'https://drive.google.com/thumbnail?id=1RnsaR8aoi3QpUbJYPKclaUKEb3GLoahj&sz=w1000', alt: 'Foto 2 - Respuestas del grupo' },
+        { src: 'https://drive.google.com/thumbnail?id=1tvKxyGEZ7ekfeAzQsKXOWuFgY2R7nZdx&sz=w1000', alt: 'Foto 3 - Participación en Wayground' },
+        { src: 'https://drive.google.com/thumbnail?id=1KXbmJFApQq_WF5HAs0iXoVaqsLiTxf3D&sz=w1000', alt: 'Foto 4 - Resultados de evaluación' }
       ],
       week5: [
-        { src: 'https://drive.google.com/uc?export=view&id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6', alt: 'Foto 1 - Tabla de especificaciones' },
-        { src: 'https://drive.google.com/uc?export=view&id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm', alt: 'Foto 2 - Diseño de ítems' },
-        { src: 'https://drive.google.com/uc?export=view&id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w', alt: 'Foto 3 - Procesos de diseño' },
-        { src: 'https://drive.google.com/uc?export=view&id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h', alt: 'Foto 4 - Análisis de resultados' }
+        { src: 'https://drive.google.com/thumbnail?id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6&sz=w1000', alt: 'Foto 1 - Tabla de especificaciones' },
+        { src: 'https://drive.google.com/thumbnail?id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm&sz=w1000', alt: 'Foto 2 - Diseño de ítems' },
+        { src: 'https://drive.google.com/thumbnail?id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w&sz=w1000', alt: 'Foto 3 - Procesos de diseño' },
+        { src: 'https://drive.google.com/thumbnail?id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h&sz=w1000', alt: 'Foto 4 - Análisis de resultados' }
       ],
       week6: [
-        { src: 'https://drive.google.com/uc?export=view&id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6', alt: 'Foto 1 - Diseño de pruebas' },
-        { src: 'https://drive.google.com/uc?export=view&id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm', alt: 'Foto 2 - Instrumentos de evaluación' },
-        { src: 'https://drive.google.com/uc?export=view&id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w', alt: 'Foto 3 - Trabajo en equipo' },
-        { src: 'https://drive.google.com/uc?export=view&id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h', alt: 'Foto 4 - Criterios de evaluación' }
+        { src: 'https://drive.google.com/thumbnail?id=1vwhnEaTSnKljdbOPmnECFeHVChH2__zU&sz=w1000', alt: 'Foto 1 - Diseño de pruebas' },
+        { src: 'https://drive.google.com/thumbnail?id=16qCJU7qxxM1zIbvwrak88LFwRgEw65VO&sz=w1000', alt: 'Foto 2 - Instrumentos de evaluación' },
+        { src: 'https://drive.google.com/thumbnail?id=1UmMFPdEiseAVR2C-TQragqF6pnP2F3Ir&sz=w1000', alt: 'Foto 3 - Trabajo en equipo' },
+        { src: 'https://drive.google.com/thumbnail?id=1Tti4xHD0UUzxzUVU_mm6l6dOqDeZaH3s&sz=w1000', alt: 'Foto 4 - Criterios de evaluación' }
       ]
     };
 
@@ -590,5 +602,5 @@
 
     document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d7c428a33b1b887',t:'MTc3Mjc0NjYyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d7cce8763e9da67',t:'MTc3Mjc1MjM1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
