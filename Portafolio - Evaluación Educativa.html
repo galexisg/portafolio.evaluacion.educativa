@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="es" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Evaluación</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .font-sans { font-family: 'Inter', system-ui, sans-serif; }
+    .section-fade { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .section-fade.visible { opacity: 1; transform: translateY(0); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: currentColor; transition: width 0.3s ease; }
+    .nav-link:hover::after { width: 100%; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-sans antialiased" style="background-color: #FAFAF9; color: #1C1917;"><!-- Navegación Fija -->
+  <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: rgba(250, 250, 249, 0.95); backdrop-filter: blur(10px);">
+   <div class="max-w-4xl mx-auto flex justify-between items-center"><span class="font-serif text-lg font-semibold" id="nav-title">Portafolio</span>
+    <div class="hidden md:flex gap-8 text-sm tracking-wide"><a href="#portada" class="nav-link hover:opacity-70 transition-opacity">Inicio</a> <a href="#indice" class="nav-link hover:opacity-70 transition-opacity">Índice</a> <a href="#semana4" class="nav-link hover:opacity-70 transition-opacity">Semana 4</a> <a href="#semana5" class="nav-link hover:opacity-70 transition-opacity">Semana 5</a> <a href="#semana6" class="nav-link hover:opacity-70 transition-opacity">Semana 6</a>
+    </div>
+   </div>
+  </nav>
+  <main class="w-full"><!-- PORTADA -->
+   <section id="portada" class="min-h-screen flex items-center justify-center px-6 pt-20 pb-20">
+    <div class="text-center max-w-2xl section-fade w-full">
+     <div class="mb-8">
+      <svg class="w-16 h-16 mx-auto mb-6" style="color: #78716C;" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+      </svg>
+     </div>
+     <p class="text-sm tracking-[0.3em] uppercase mb-8" style="color: #78716C;">Portafolio de Evidencias</p>
+     <div class="mb-8 pb-8" style="border-bottom: 1px solid #E7E5E4;">
+      <p class="text-sm mb-2" style="color: #A8A29E;">UNIVERSIDAD DR. ANDRÉS BELLO</p>
+      <p class="text-sm mb-6" style="color: #A8A29E;">Regional Sonsonate</p>
+      <p id="course-display" class="text-sm font-medium mb-4" style="color: #44403C;">Evaluación Educativa</p>
+     </div>
+     <h1 id="main-title" class="font-serif text-5xl md:text-6xl font-semibold mb-8 leading-tight">Evaluación de los Aprendizajes</h1>
+     <div class="w-24 h-px mx-auto mb-8" style="background-color: #D6D3D1;"></div>
+     <div class="space-y-4 mb-12 text-sm" style="color: #44403C;">
+      <div>
+       <p class="text-xs uppercase tracking-[0.2em] mb-1" style="color: #A8A29E;">Autor</p>
+       <p id="student-display" class="font-medium">Gerber Alexis Gómez Hidalgo</p>
+      </div>
+      <div>
+       <p class="text-xs uppercase tracking-[0.2em] mb-1" style="color: #A8A29E;">Docente</p>
+       <p class="font-medium">Mtra. Liliana Jeannette Cordero de García</p>
+      </div>
+     </div>
+     <div class="flex justify-center gap-8 text-xs mb-12" style="color: #78716C;">
+      <div>
+       <p class="uppercase tracking-[0.1em] mb-1" style="color: #A8A29E;">Fecha</p>
+       <p>05 de marzo de 2026</p>
+      </div>
+      <div style="border-left: 1px solid #D6D3D1;"></div>
+      <div>
+       <p class="uppercase tracking-[0.1em] mb-1" style="color: #A8A29E;">Lugar</p>
+       <p>Sonsonate</p>
+      </div>
+     </div>
+     <div class="mt-20"><a href="#indice" class="inline-flex flex-col items-center gap-2 text-sm hover:opacity-70 transition-opacity" style="color: #78716C;"> <span>Explorar</span>
+       <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+       </svg></a>
+     </div>
+    </div>
+   </section><!-- ÍNDICE -->
+   <section id="indice" class="min-h-screen flex items-center px-6 py-24">
+    <div class="max-w-3xl mx-auto w-full section-fade">
+     <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">Contenido</p>
+     <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-12">Índice</h2>
+     <div class="space-y-0"><a href="#introduccion" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">01. Introducción</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#objetivo" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">02. Objetivo</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana4" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">03. Semana 4 — Estrategias e Instrumentos</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana5" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">04. Semana 5 — Prueba Objetiva</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a> <a href="#semana6" class="group flex items-baseline justify-between py-6 border-b" style="border-color: #E7E5E4;"> <span class="text-lg">05. Semana 6 — Prueba de Ensayo y Actuación</span> <span class="text-sm opacity-0 group-hover:opacity-100 transition-opacity" style="color: #78716C;">→</span> </a>
+     </div>
+    </div>
+   </section><!-- INTRODUCCIÓN -->
+   <section id="introduccion" class="min-h-screen flex items-center px-6 py-24" style="background-color: #FFFFFF;">
+    <div class="max-w-3xl mx-auto w-full section-fade">
+     <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">01</p>
+     <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-8">Introducción</h2>
+     <div class="prose prose-lg max-w-none space-y-6" style="color: #44403C;">
+      <p class="text-lg leading-relaxed">El presente portafolio representa una compilación sistemática de los aprendizajes y evidencias desarrollados durante el curso de Evaluación de los Aprendizajes. A través de este documento, se busca demostrar el dominio progresivo de las competencias relacionadas con el diseño, aplicación y análisis de diversos instrumentos de evaluación educativa.</p>
+      <p class="text-lg leading-relaxed">Este portafolio no solo recopila productos y actividades, sino que también incluye reflexiones críticas que evidencian el proceso de metacognición y crecimiento profesional experimentado a lo largo del curso.</p>
+     </div>
+    </div>
+   </section><!-- OBJETIVO -->
+   <section id="objetivo" class="min-h-screen flex items-center px-6 py-24">
+    <div class="max-w-3xl mx-auto w-full section-fade">
+     <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">02</p>
+     <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-8">Objetivo</h2>
+     <div class="p-8 rounded-lg" style="background-color: #FFFFFF; border: 1px solid #E7E5E4;">
+      <p class="text-xl leading-relaxed" style="color: #44403C;">Documentar y reflexionar sobre el proceso de aprendizaje relacionado con las estrategias e instrumentos de evaluación educativa, demostrando la capacidad de diseñar, aplicar y analizar herramientas evaluativas pertinentes y válidas para diversos contextos de enseñanza-aprendizaje.</p>
+     </div>
+    </div>
+   </section><!-- SEMANA 4 -->
+   <section id="semana4" class="min-h-screen px-6 py-24" style="background-color: #FFFFFF;">
+    <div class="max-w-3xl mx-auto w-full section-fade">
+     <div class="mb-12">
+      <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">03 — Semana 4</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">Estrategias e Instrumentos de Evaluación</h2>
+      <div class="w-16 h-px" style="background-color: #D6D3D1;"></div>
+     </div>
+     <div class="space-y-8"><!-- Contenido -->
+      <div class="p-8 rounded-lg" style="background-color: #FAFAF9;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Contenido</h3>
+       <div class="space-y-6" style="color: #44403C;">
+        <p class="leading-relaxed">Durante esta semana se abordaron las diferentes estrategias de evaluación y los instrumentos que permiten recopilar información sobre el aprendizaje de los estudiantes. Se estudiaron los conceptos fundamentales de:</p>
+        <div class="space-y-4">
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Evaluación diagnóstica, formativa y sumativa</h4>
+          <p class="text-sm leading-relaxed">Cada una con un propósito específico dentro del proceso formativo.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Métodos de evaluación</h4>
+          <p class="text-sm leading-relaxed">Selección de respuesta, respuesta corta, respuesta escrita extendida y evaluación del desempeño.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Técnicas de observación y sus instrumentos</h4>
+          <p class="text-sm leading-relaxed">Rúbricas, listas de cotejo, portafolios, entrevistas, diarios de clase.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Criterios para la selección de instrumentos</h4>
+          <p class="text-sm leading-relaxed">Pertinencia con los objetivos, adecuación al contexto y facilidad de aplicación.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Validez y confiabilidad de los instrumentos</h4>
+          <p class="text-sm leading-relaxed">Asegurar que los resultados reflejen de manera precisa y consistente el desempeño del estudiante.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Innovaciones en evaluación educativa</h4>
+          <p class="text-sm leading-relaxed">Gamificación, aula invertida, inteligencia artificial y realidades extendidas como recursos para enriquecer la práctica evaluativa.</p>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evidencia -->
+      <div class="p-8 rounded-lg" style="border: 1px solid #E7E5E4;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Evidencia</h3>
+       <div class="space-y-4" style="color: #44403C;">
+        <p class="leading-relaxed">En esta sesión trabajamos en equipo para establecer y ejecutar las siguientes acciones:</p>
+        <div class="space-y-3 ml-4">
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Elaborar una estrategia de evaluación:</span> Para el tema de Evaluación Educativa, específicamente sobre la Planificación de la evaluación de los aprendizajes. La estrategia consistió en diseñar un cuestionario gamificado con preguntas de opción múltiple, fundamentadas en los contenidos de la Unidad #2.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Aplicar el cuestionario gamificado:</span> Mediante la plataforma digital Wayground, el grupo de maestrantes participó activamente respondiendo las preguntas en tiempo real, mientras el ejecutor guiaba el desarrollo de la actividad y controlaba la secuencia de los ítems.</p>
+         </div>
+        </div>
+        <div class="p-4 rounded mt-4" style="background-color: #FAFAF9;">
+         <p class="text-sm leading-relaxed">La actividad permitió evaluar los conocimientos adquiridos de manera dinámica y colaborativa, generando resultados inmediatos que sirvieron como retroalimentación para reforzar los conceptos abordados en clase. Además, el trabajo en equipo favoreció la organización, la participación equitativa y la integración de herramientas digitales en el proceso de evaluación.</p>
+        </div>
+       </div>
+       <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
+        <p class="text-sm font-semibold mb-3" style="color: #78716C;">Enlace al documento de evidencia:</p>
+        <div class="flex flex-col gap-3"><a href="https://docs.google.com/document/d/1RqKf-wCyPsihndfubn-Cpl-h9sXbgW9dT-coPTXVOs0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver documento de evidencia</a>
+        </div>
+        <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Abre el documento con fotos del cuestionario gamificado y resultados</p>
+       </div><!-- Espacio para agregar fotos -->
+       <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
+        <p class="text-sm font-semibold mb-3" style="color: #78716C;">Fotos de la actividad:</p>
+        <div id="evidence-photos-week4" class="grid md:grid-cols-2 gap-4"><button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1JE39bJenT8POyhLpgpeAju0DYUp3nVxr&amp;export=view" alt="Foto 1 - Cuestionario Gamificado" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1RnsaR8aoi3QpUbJYPKclaUKEb3GLoahj&amp;export=view" alt="Foto 2 - Respuestas del grupo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1tvKxyGEZ7ekfeAzQsKXOWuFgY2R7nZdx&amp;export=view" alt="Foto 3 - Participación en Wayground" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week4" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.usercontent.google.com/download?id=1KXbmJFApQq_WF5HAs0iXoVaqsLiTxf3D&amp;export=view" alt="Foto 4 - Resultados de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button>
+        </div>
+        <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Haz clic en cualquier foto para ver el carrusel completo</p>
+       </div>
+      </div><!-- Reflexión -->
+      <div class="p-8 rounded-lg" style="background-color: #1C1917; color: #FAFAF9;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Reflexión</h3>
+       <p class="leading-relaxed opacity-90">Esta semana comprendí la importancia de seleccionar adecuadamente los instrumentos de evaluación según los objetivos de aprendizaje. Al participar en la elaboración y aplicación del quiz gamificado en Wayground, confirmé que no existe un instrumento perfecto, sino que cada uno tiene fortalezas y limitaciones que deben considerarse. La reflexión sobre mi práctica me permite reconocer que anteriormente utilizaba instrumentos sin considerar su pertinencia, lo cual limitaba la información obtenida sobre el aprendizaje real de los estudiantes. Ahora valoro que una planificación consciente y colaborativa en la selección de instrumentos enriquece la evaluación y ofrece evidencias más auténticas del proceso formativo.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- SEMANA 5 -->
+   <section id="semana5" class="min-h-screen px-6 py-24">
+    <div class="max-w-3xl mx-auto w-full section-fade">
+     <div class="mb-12">
+      <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">04 — Semana 5</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">Prueba Objetiva y Tabla de Especificaciones</h2>
+      <div class="w-16 h-px" style="background-color: #D6D3D1;"></div>
+     </div>
+     <div class="space-y-8"><!-- Contenido -->
+      <div class="p-8 rounded-lg" style="background-color: #FAFAF9;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Contenido</h3>
+       <div class="space-y-6" style="color: #44403C;">
+        <p class="leading-relaxed">Durante esta semana se profundiza en los elementos fundamentales que sustentan el diseño de instrumentos de evaluación válidos y pertinentes. Se estudia cómo la coherencia entre objetivos, contenidos y criterios de evaluación es crucial para garantizar que las pruebas midan efectivamente lo que se pretende evaluar, asegurando que cada ítem contribuya significativamente a la valoración del aprendizaje estudiantil.</p>
+        <div class="space-y-4">
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Tema 1: Objetos, tareas y criterios de evaluación</h4>
+          <p class="text-sm leading-relaxed">Se estudia la tríada que define qué se evalúa (objetos), cómo se evalúa (tareas) y bajo qué parámetros (criterios). Se enfatiza la necesidad de coherencia entre objetivos de aprendizaje, contenidos y criterios de valoración. Se destaca que los criterios deben ser claros, medibles y pertinentes para garantizar una evaluación justa y formativa.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Tema 2: Medios e instrumentos de evaluación</h4>
+          <p class="text-sm leading-relaxed mb-3">Prueba objetiva: Se analizan sus características principales (claridad, precisión, validez y confiabilidad).</p>
+          <p class="text-sm leading-relaxed mb-3">Tipos de ítems o reactivos: Opción múltiple, verdadero/falso, emparejamiento, ordenamiento y problemas científico-matemáticos.</p>
+          <p class="text-sm leading-relaxed mb-3">Planteamiento de la prueba objetiva: Elaboración de ítems alineados con los objetivos de aprendizaje.</p>
+          <p class="text-sm leading-relaxed mb-3">Criterios para ensamblar y analizar resultados: Coherencia entre objetivos, contenidos y reactivos; análisis de dificultad y discriminación.</p>
+          <p class="text-sm leading-relaxed">Diseño de pruebas objetivas: Integración de ítems variados y equilibrados para evaluar de manera justa y completa el aprendizaje.</p>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evidencia -->
+      <div class="p-8 rounded-lg" style="border: 1px solid #E7E5E4;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Evidencia</h3>
+       <div class="space-y-4" style="color: #44403C;">
+        <p class="leading-relaxed">En esta sesión trabajamos en equipo para diseñar una prueba objetiva para la asignatura <span class="font-semibold">"Construcción de Instalaciones Residenciales y Comerciales"</span>. El proceso incluyó:</p>
+        <div class="space-y-3 ml-4">
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Establecer contenidos a evaluar:</span> Identificamos 5 contenidos fundamentales de la asignatura que serían evaluados a través de la prueba objetiva.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Elaborar tabla de especificaciones:</span> Diseñamos una tabla de especificaciones que articuló los 5 contenidos con los niveles cognitivos de la Taxonomía de Bloom (Crear, Aplicar y Analizar), estableciendo la distribución proporcionada de 15 ítems según cada contenido y nivel.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Determinar cantidad de ítems:</span> La tabla de especificaciones permitió establecer con precisión el número de ítems por contenido, garantizando una cobertura equilibrada y una evaluación comprensiva del aprendizaje.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Diseñar ítems alineados:</span> Se elaboraron 15 ítems con coherencia entre los objetivos de aprendizaje, contenidos y niveles cognitivos especificados en la tabla.</p>
+         </div>
+        </div>
+        <div class="p-4 rounded mt-4" style="background-color: #FAFAF9;">
+         <p class="text-sm leading-relaxed">Este proceso demostró que la tabla de especificaciones es una herramienta fundamental para garantizar la validez de contenido de una prueba. Al vincular explícitamente los contenidos con los niveles cognitivos de Bloom y especificar el número de ítems por cada combinación, aseguramos que la prueba evaluara de manera equilibrada y sistemática todos los aspectos del aprendizaje esperado.</p>
+        </div>
+       </div>
+       <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
+        <p class="text-sm font-semibold mb-3" style="color: #78716C;">Enlace al documento de evidencia:</p>
+        <div class="flex flex-col gap-3"><a href="https://docs.google.com/document/d/1B19AzlHD0PTYe6K3RdLCMrQoWvk07PM6Ya9j3nS0Jas/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver prueba objetiva</a>
+        </div>
+        <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Documento con la prueba diseñada y análisis de resultados</p>
+       </div><!-- Espacio para agregar fotos -->
+       <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
+        <p class="text-sm font-semibold mb-3" style="color: #78716C;">Fotos de la actividad:</p>
+        <div id="evidence-photos-week5" class="grid md:grid-cols-2 gap-4"><button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6" alt="Foto 1 - Tabla de especificaciones" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm" alt="Foto 2 - Diseño de ítems" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w" alt="Foto 3 - Procesos de diseño" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week5" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h" alt="Foto 4 - Análisis de resultados" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button>
+        </div>
+        <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Haz clic en cualquier foto para ver el carrusel completo</p>
+       </div>
+      </div><!-- Reflexión -->
+      <div class="p-8 rounded-lg" style="background-color: #1C1917; color: #FAFAF9;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Reflexión</h3>
+       <p class="leading-relaxed opacity-90">El diseño de pruebas objetivas requiere una planificación cuidadosa que va más allá de simplemente redactar preguntas. Al trabajar esta semana con la tabla de especificaciones, comprendí que la coherencia entre objetivos de aprendizaje, contenidos y niveles cognitivos evaluados es fundamental. Este proceso me enseñó la importancia de la validez de contenido y cómo garantizar que una prueba realmente evalúe lo que pretende medir. Comparando con experiencias previas en las que elaboraba cuestionarios sin este nivel de planificación, ahora reconozco que cada ítem debe contribuir significativamente a la valoración del aprendizaje estudiantil, fortaleciendo la calidad y representatividad de la evaluación.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- SEMANA 6 -->
+   <section id="semana6" class="min-h-screen px-6 py-24" style="background-color: #FFFFFF;">
+    <div class="max-w-3xl mx-auto w-full section-fade">
+     <div class="mb-12">
+      <p class="text-sm tracking-[0.2em] uppercase mb-4" style="color: #A8A29E;">05 — Semana 6</p>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold mb-4">Prueba de Ensayo y Prueba de Actuación</h2>
+      <div class="w-16 h-px" style="background-color: #D6D3D1;"></div>
+     </div>
+     <div class="space-y-8"><!-- Contenido -->
+      <div class="p-8 rounded-lg" style="background-color: #FAFAF9;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Contenido</h3>
+       <div class="space-y-6" style="color: #44403C;">
+        <p class="leading-relaxed">Durante esta semana se abordaron las pruebas de ensayo y de actuación, junto con los instrumentos complementarios que permiten recopilar información sobre el aprendizaje de los estudiantes. Se estudiaron los conceptos fundamentales de:</p>
+        <div class="space-y-4">
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Prueba de ensayo</h4>
+          <p class="text-sm leading-relaxed">Características, tipos de preguntas (breve, intermedia, extensa, mixta), criterios para su diseño, aplicación y análisis de resultados.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Prueba de actuación</h4>
+          <p class="text-sm leading-relaxed">Definición, características y metodología. Criterios para su diseño, aplicación y análisis de resultados, orientados a la evaluación de competencias prácticas y socioafectivas.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Instrumentos de observación y registro</h4>
+          <p class="text-sm leading-relaxed">Listas de cotejo y escalas de calificación como herramientas para valorar desempeño.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Criterios de evaluación del aprendizaje</h4>
+          <p class="text-sm leading-relaxed">Importancia de definir criterios claros, medibles y pertinentes, en coherencia con los objetivos y contenidos.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Validez y confiabilidad de los instrumentos</h4>
+          <p class="text-sm leading-relaxed">Garantizar que los resultados reflejen de manera precisa y consistente el desempeño del estudiante.</p>
+         </div>
+         <div class="pl-4 border-l-2" style="border-color: #D6D3D1;">
+          <h4 class="font-semibold mb-2">Aplicaciones prácticas</h4>
+          <p class="text-sm leading-relaxed">Diseño de pruebas de ensayo y actuación en equipo, acompañadas de sus respectivos instrumentos de evaluación (rúbricas, listas de cotejo, escalas).</p>
+         </div>
+        </div>
+       </div>
+      </div><!-- Evidencia -->
+      <div class="p-8 rounded-lg" style="border: 1px solid #E7E5E4;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Evidencia</h3>
+       <div class="space-y-4" style="color: #44403C;">
+        <p class="leading-relaxed">En esta sesión trabajamos en equipo para diseñar pruebas de ensayo y actuación, acompañadas de sus respectivos instrumentos de evaluación. El proceso incluyó:</p>
+        <div class="space-y-3 ml-4">
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Diseño de prueba de ensayo:</span> Elaboramos preguntas que permitieran evaluar el pensamiento crítico y la capacidad de síntesis de los estudiantes, con criterios claros para su evaluación.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Diseño de prueba de actuación:</span> Creamos tareas que permitieran observar competencias prácticas y socioafectivas, estableciendo procedimientos sistemáticos de evaluación.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Desarrollo de instrumentos de registro:</span> Diseñamos listas de cotejo y escalas de calificación que permitieran evaluar de manera objetiva el desempeño observado.</p>
+         </div>
+         <div class="flex items-start gap-3">
+          <span style="color: #78716C; flex-shrink: 0;">•</span>
+          <p class="text-sm leading-relaxed"><span class="font-semibold">Aplicación de criterios de evaluación:</span> Establecimos criterios medibles y pertinentes que garantizaran la validez y confiabilidad de los resultados.</p>
+         </div>
+        </div>
+        <div class="p-4 rounded mt-4" style="background-color: #FAFAF9;">
+         <p class="text-sm leading-relaxed">Este trabajo permitió comprender que las pruebas de ensayo y actuación son complementarias a las pruebas objetivas, ofreciendo información valiosa sobre competencias que requieren demostración práctica y reflexión profunda. La elaboración de instrumentos de registro precisos fue esencial para reducir la subjetividad en la evaluación.</p>
+        </div>
+       </div>
+       <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
+        <p class="text-sm font-semibold mb-3" style="color: #78716C;">Enlace al documento de evidencia:</p>
+        <div class="flex flex-col gap-3"><a href="https://docs.google.com/document/d/1ahWb8ySm1QiUQGRcqT0vnGNonRCHjH7UeLsBp0DW-I0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded text-sm font-medium transition-opacity hover:opacity-70 text-center" style="background-color: #78716C; color: #FAFAF9;">Ver prueba de ensayo diseñada</a>
+        </div>
+        <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Documento con la prueba de ensayo y criterios de evaluación</p>
+       </div><!-- Espacio para agregar fotos -->
+       <div class="mt-6 pt-6" style="border-top: 1px solid #E7E5E4;">
+        <p class="text-sm font-semibold mb-3" style="color: #78716C;">Fotos de la actividad:</p>
+        <div id="evidence-photos-week6" class="grid md:grid-cols-2 gap-4"><button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="0" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6" alt="Foto 1 - Diseño de prueba de ensayo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 1 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="1" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm" alt="Foto 2 - Criterios de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 2 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="2" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w" alt="Foto 3 - Trabajo colaborativo" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 3 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button> <button class="carousel-trigger relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow" data-carousel="week6" data-index="3" style="aspect-ratio: 4/3; background-color: #F5F5F4; border: none; padding: 0;"> <img src="https://drive.google.com/uc?export=view&amp;id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h" alt="Foto 4 - Rúbrica de evaluación" class="w-full h-full object-cover" loading="lazy" onerror="console.error('Imagen 4 no se pudo cargar:', this.src); this.style.background='#E7E5E4'; this.alt='Imagen no disponible';">
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div></button>
+        </div>
+        <p class="text-xs mt-2 opacity-70" style="color: #A8A29E;">Haz clic en cualquier foto para ver el carrusel completo</p>
+       </div>
+      </div><!-- Reflexión -->
+      <div class="p-8 rounded-lg" style="background-color: #1C1917; color: #FAFAF9;">
+       <h3 class="font-serif text-2xl font-semibold mb-6">Reflexión</h3>
+       <p class="leading-relaxed opacity-90">Las pruebas de ensayo y actuación permiten evaluar competencias que no pueden medirse con pruebas objetivas, como el pensamiento crítico, la creatividad y las habilidades procedimentales. Al trabajar con estos instrumentos comprendí que la clave está en diseñar criterios claros y objetivos de calificación. La lista de cotejo y la escala de calificación son herramientas fundamentales que reducen la subjetividad y proporcionan retroalimentación específica al estudiante. Comparando con experiencias previas en las que evaluaba estas competencias de manera más intuitiva, ahora reconozco que el uso de estos instrumentos fortalece la validez y confiabilidad de la evaluación, asegurando que los resultados reflejen de manera justa y auténtica el aprendizaje alcanzado.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- PIE DE PÁGINA -->
+   <footer class="px-6 py-16" style="background-color: #1C1917; color: #FAFAF9;">
+    <div class="max-w-3xl mx-auto text-center">
+     <p class="font-serif text-2xl mb-4">Portafolio de Evaluación</p>
+     <p class="text-sm opacity-60">Curso de Evaluación de los Aprendizajes • 2024</p>
+     <div class="mt-8 pt-8" style="border-top: 1px solid #292524;"><a href="#portada" class="inline-flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
+       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+       </svg> Volver al inicio </a>
+     </div>
+    </div>
+   </footer>
+  </main><!-- MODAL CARRUSEL -->
+  <div id="carousel-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center" style="background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(4px);">
+   <div class="relative w-11/12 max-w-4xl"><!-- Botón Cerrar --> <button id="carousel-close" class="absolute -top-10 right-0 text-white hover:opacity-70 transition-opacity" style="z-index: 60;">
+     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+     </svg></button> <!-- Imagen Principal -->
+    <div class="relative rounded-lg overflow-hidden" style="aspect-ratio: 16/9; background-color: #000;"><img id="carousel-image" src="" alt="Foto" class="w-full h-full object-contain" loading="lazy">
+    </div><!-- Controles de Navegación -->
+    <div class="flex items-center justify-between mt-6 gap-4"><button id="carousel-prev" class="p-3 rounded-full hover:bg-white hover:bg-opacity-10 transition-all" style="color: white;">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg></button>
+     <div class="flex-1 text-center">
+      <p id="carousel-counter" class="text-white text-sm">1 de 4</p>
+     </div><button id="carousel-next" class="p-3 rounded-full hover:bg-white hover:bg-opacity-10 transition-all" style="color: white;">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg></button>
+    </div><!-- Puntos Indicadores -->
+    <div id="carousel-dots" class="flex justify-center gap-2 mt-4"></div>
+   </div>
+  </div>
+  <script>
+    // Carrusel Modal
+    const carouselData = {
+      week4: [
+        { src: 'https://drive.usercontent.google.com/download?id=1JE39bJenT8POyhLpgpeAju0DYUp3nVxr&export=view', alt: 'Foto 1 - Cuestionario Gamificado' },
+        { src: 'https://drive.usercontent.google.com/download?id=1RnsaR8aoi3QpUbJYPKclaUKEb3GLoahj&export=view', alt: 'Foto 2 - Respuestas del grupo' },
+        { src: 'https://drive.usercontent.google.com/download?id=1tvKxyGEZ7ekfeAzQsKXOWuFgY2R7nZdx&export=view', alt: 'Foto 3 - Participación en Wayground' },
+        { src: 'https://drive.usercontent.google.com/download?id=1KXbmJFApQq_WF5HAs0iXoVaqsLiTxf3D&export=view', alt: 'Foto 4 - Resultados de evaluación' }
+      ],
+      week5: [
+        { src: 'https://drive.google.com/uc?export=view&id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6', alt: 'Foto 1 - Tabla de especificaciones' },
+        { src: 'https://drive.google.com/uc?export=view&id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm', alt: 'Foto 2 - Diseño de ítems' },
+        { src: 'https://drive.google.com/uc?export=view&id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w', alt: 'Foto 3 - Procesos de diseño' },
+        { src: 'https://drive.google.com/uc?export=view&id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h', alt: 'Foto 4 - Análisis de resultados' }
+      ],
+      week6: [
+        { src: 'https://drive.google.com/uc?export=view&id=1w1cHDrF428M35JVO1ydRWhhDw2Wzd8Z6', alt: 'Foto 1 - Diseño de pruebas' },
+        { src: 'https://drive.google.com/uc?export=view&id=1qDZ5N_3skk12g9CMkGeuoBVk9aiUlZjm', alt: 'Foto 2 - Instrumentos de evaluación' },
+        { src: 'https://drive.google.com/uc?export=view&id=1DcmQjFnjQFNblTGPBInGp3ZTlCUfj71w', alt: 'Foto 3 - Trabajo en equipo' },
+        { src: 'https://drive.google.com/uc?export=view&id=12RIIBfYrMS7_ICWRKyK7Q1VyWVo9mA3h', alt: 'Foto 4 - Criterios de evaluación' }
+      ]
+    };
+
+    let currentCarousel = null;
+    let currentIndex = 0;
+
+    const modal = document.getElementById('carousel-modal');
+    const carouselImage = document.getElementById('carousel-image');
+    const carouselCounter = document.getElementById('carousel-counter');
+    const carouselDots = document.getElementById('carousel-dots');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const closeBtn = document.getElementById('carousel-close');
+
+    function openCarousel(carouselName, index) {
+      currentCarousel = carouselName;
+      currentIndex = index;
+      modal.classList.remove('hidden');
+      updateCarousel();
+    }
+
+    function closeCarousel() {
+      modal.classList.add('hidden');
+      currentCarousel = null;
+      currentIndex = 0;
+    }
+
+    function updateCarousel() {
+      if (!currentCarousel || !carouselData[currentCarousel]) return;
+
+      const images = carouselData[currentCarousel];
+      const image = images[currentIndex];
+
+      carouselImage.src = image.src;
+      carouselImage.alt = image.alt;
+      carouselCounter.textContent = `${currentIndex + 1} de ${images.length}`;
+
+      carouselDots.innerHTML = '';
+      images.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.classList.add('w-2', 'h-2', 'rounded-full', 'transition-all', 'hover:opacity-70');
+        dot.style.backgroundColor = i === currentIndex ? 'white' : 'rgba(255, 255, 255, 0.3)';
+        dot.style.cursor = 'pointer';
+        dot.onclick = () => {
+          currentIndex = i;
+          updateCarousel();
+        };
+        carouselDots.appendChild(dot);
+      });
+    }
+
+    function nextImage() {
+      if (!currentCarousel) return;
+      const images = carouselData[currentCarousel];
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    }
+
+    function prevImage() {
+      if (!currentCarousel) return;
+      const images = carouselData[currentCarousel];
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    }
+
+    document.querySelectorAll('.carousel-trigger').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const carouselName = btn.dataset.carousel;
+        const index = parseInt(btn.dataset.index);
+        openCarousel(carouselName, index);
+      });
+    });
+
+    prevBtn.addEventListener('click', prevImage);
+    nextBtn.addEventListener('click', nextImage);
+    closeBtn.addEventListener('click', closeCarousel);
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeCarousel();
+    });
+
+    // Navegación con teclado
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'Escape') closeCarousel();
+    });
+  </script>
+  <script>
+
+    const defaultConfig = {
+      portfolio_title: 'Evaluación de los Aprendizajes',
+      student_name: 'Gerber Alexis Gómez Hidalgo',
+      course_name: 'Evaluación Educativa',
+      background_color: '#FAFAF9',
+      surface_color: '#FFFFFF',
+      text_color: '#1C1917',
+      accent_color: '#78716C',
+      dark_color: '#1C1917',
+      font_family: 'Cormorant Garamond',
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const title = config.portfolio_title || defaultConfig.portfolio_title;
+      const student = config.student_name || defaultConfig.student_name;
+      const course = config.course_name || defaultConfig.course_name;
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      const fontSize = config.font_size || defaultConfig.font_size;
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const accentColor = config.accent_color || defaultConfig.accent_color;
+      const darkColor = config.dark_color || defaultConfig.dark_color;
+
+      document.getElementById('main-title').textContent = title;
+      document.getElementById('nav-title').textContent = 'Portafolio';
+      document.getElementById('student-display').textContent = student;
+      document.getElementById('course-display').textContent = course;
+
+      document.querySelectorAll('.font-serif').forEach(el => {
+        el.style.fontFamily = `${fontFamily}, Georgia, serif`;
+      });
+
+      document.body.style.backgroundColor = bgColor;
+      document.body.style.color = textColor;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); }
+          },
+          {
+            get: () => config.accent_color || defaultConfig.accent_color,
+            set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); }
+          },
+          {
+            get: () => config.dark_color || defaultConfig.dark_color,
+            set: (v) => { config.dark_color = v; window.elementSdk.setConfig({ dark_color: v }); }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['portfolio_title', config.portfolio_title || defaultConfig.portfolio_title],
+        ['student_name', config.student_name || defaultConfig.student_name],
+        ['course_name', config.course_name || defaultConfig.course_name]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d7c428a33b1b887',t:'MTc3Mjc0NjYyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
